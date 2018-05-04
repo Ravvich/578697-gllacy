@@ -9,7 +9,7 @@
 			<h1 class="visually-hidden">Навигация по главной странице магазина Gllacy.</h1>
 			<nav class="nav">
 				<a class="nav__logo" href="#">
-					<img src="img/logo.png">
+					<img src="img/logo.png" alt="Gllacy логотип" width="#" height="#">
 				</a>
 				<ul class="nav__syte">
 					<li class="nav__catalog">
@@ -124,11 +124,13 @@
 			</article>
 			<div class="wrapper">
 				<section class="news">
+					<h3 class="visually-hidden">Новости</h3>
 					<p class="news__text">Новое в нашем блоге</p>
 					<a href="#" class="news__link">10 способов сервировки фруктовых щербетов к столу
 					</a>
 				</section>
 				<section class="send">
+					<h3 class="visually-hidden">Подписка</h3>
 					<p class="send__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
 					</p>
 					<form action="submit" class="send__form">
@@ -138,6 +140,7 @@
 				</section>
 			</div>
 			<section class="map">
+				<h3 class="visually-hidden">Карта</h3>
 				<img src="img/map.jpg" alt="Карта проезда" class="map__image">
 				<span class="map__pin"></span>
 				<div class="map__adress">
@@ -179,21 +182,23 @@
 			</ul>
 		</footer>
 		<section class="login__modal">
-			<form class="login__form action="https://echo.htmlacademy.ru" method="post">
+			<h3 class="visually-hidden">Форма входа</h3>
+			<form class="login__form" action="https://echo.htmlacademy.ru" method="post">
 				<p>
 					<label class="visually-hidden" for="login__user">Логин</label>
-					<input type="text" class="login__user" id="login__user name="Логин" placeholder="Электронная почта">
+					<input type="text" class="login__user" id="login__user" name="login" placeholder="Электронная почта">
 				</p>
 				<p>
 					<label class="visually-hidden" for="login__password">Пароль</label>
-					<input type="text" class="login__password" id="login__password name="Пароль" placeholder="Пароль">
+					<input type="text" class="login__password" id="login__password" name="password" placeholder="Пароль">
 				</p>
-				<button class="button login__button type="submit">Войти</button>
+				<button class="button login__button" type="submit">Войти</button>
 				<a href="#" class="login__member">Забыли пароль?</a>
 				<a href="#" class="login__registration">Новая регистрация</a>
 			</form>
 		</section>
 		<section class="search__modal">
+			<h3 class="visually-hidden">Ворма поиска</h3>
 			<form action="https://echo.htmlacademy.ru" class="search__form">
 				<input type="text" class="search__input" placeholder="Что ищем?">
 			</form>
