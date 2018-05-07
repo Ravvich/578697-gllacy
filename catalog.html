@@ -52,64 +52,66 @@
 		<main class="main__wrap">
 			<h1 class="main__title">Сливочное мороженое</h1>
 			<section class="filters">
+				<h2 class="visually-hidden">Фильтр товаров</h2>
 				<form action="https://echo.htmlacademy.ru" method="get">
-				<fildset class="filters__sort">
-					<legend>Сортировка:</legend>
-					<div class="filters__select">
-						<select name="sort">
-							<option value="popular">по популярности</option>
-							<option value="up">сначала недорогие</option>
-							<option value="down">сначала дорогие</option>
-							<option value="fat">по жирности</option>
-						</select>
-					</div>					
-				</fildset>
-				<fildset class="filters__price">
-					<legend>Цена: 100руб. - 500руб.</legend>
-					<div class="filters__range">
-						<div class="filters__scale">
-							<div class="filters__bar"></div>
+					<fildset class="filters__sort">
+						<legend>Сортировка:</legend>
+						<div class="filters__select">
+							<select name="sort">
+								<option value="popular">по популярности</option>
+								<option value="up">сначала недорогие</option>
+								<option value="down">сначала дорогие</option>
+								<option value="fat">по жирности</option>
+							</select>
+						</div>					
+					</fildset>
+					<fildset class="filters__price">
+						<legend>Цена: 100руб. - 500руб.</legend>
+						<div class="filters__range">
+							<div class="filters__scale">
+								<div class="filters__bar"></div>
+							</div>
+							<div class="toggle toggle-min"></div>
+							<div class="toggle toggle-max"></div>
 						</div>
-						<div class="toggle toggle-min"></div>
-						<div class="toggle toggle-max"></div>
-					</div>
-				</fildset>
-				<fildset class="filters__fat">
-					<legend>Жирность:</legend>
-					<div class="filters__fatwrap">
-						<input class="visually-hidden filters__input filters__input-radio" id="0" name="fat" type="radio">
-						<label for="0">0%</label>
-						<input class="visually-hidden filters__input filters__input-radio" id="<10" name="fat" type="radio" checked>
-						<label for="<10">до 10%</label>
-						<input class="visually-hidden filters__input filters__input-radio" id="<30" name="fat" type="radio">
-						<label for="<30">до 30%</label>
-						<input class="visually-hidden filters__input filters__input-radio" id="30" name="fat" type="radio">
-						<label for="30">выше 30%</label>
-					</div>
-				</fildset>
-				<fildset class="filters__filling">
-					<legend>Наполнители:</legend>
-					<div class="filters__fillingwrap">
-						<input class="visually-hidden filters__input filters__input-checkbox" id="chokolate" name="filling" type="checkbox">
-						<label for="chokolate">шоколадные</label>
-						<input class="visually-hidden filters__input filters__input-checkbox" id="sugar" name="filling" type="checkbox" checked>
-						<label for="sugar">сахарные присыпки</label>
-						<input class="visually-hidden filters__input filters__input-checkbox" id="frut" name="filling" type="checkbox" checked>
-						<label for="frut">фрукты</label>
-						<input class="visually-hidden filters__input filters__input-checkbox" id="syrop" name="filling" type="checkbox">
-						<label for="syrop">сиропы</label>
-						<input class="visually-hidden filters__input filters__input-checkbox" id="jam" name="filling" type="checkbox">
-						<label for="jam">джемы</label>
-					</div>
-				</fildset>
-				<button class="filters__button button">Применить</button>
+					</fildset>
+					<fildset class="filters__fat">
+						<legend>Жирность:</legend>
+						<div class="filters__fatwrap">
+							<input class="visually-hidden filters__input filters__input-radio" id="0" name="fat" type="radio">
+							<label for="0">0%</label>
+							<input class="visually-hidden filters__input filters__input-radio" id="<10" name="fat" type="radio" checked>
+							<label for="<10">до 10%</label>
+							<input class="visually-hidden filters__input filters__input-radio" id="<30" name="fat" type="radio">
+							<label for="<30">до 30%</label>
+							<input class="visually-hidden filters__input filters__input-radio" id="30" name="fat" type="radio">
+							<label for="30">выше 30%</label>
+							</div>
+					</fildset>
+					<fildset class="filters__filling">
+						<legend>Наполнители:</legend>
+						<div class="filters__fillingwrap">
+							<input class="visually-hidden filters__input filters__input-checkbox" id="chokolate" name="filling" type="checkbox">
+							<label for="chokolate">шоколадные</label>
+							<input class="visually-hidden filters__input filters__input-checkbox" id="sugar" name="filling" type="checkbox" checked>
+							<label for="sugar">сахарные присыпки</label>
+							<input class="visually-hidden filters__input filters__input-checkbox" id="frut" name="filling" type="checkbox" checked>
+							<label for="frut">фрукты</label>
+							<input class="visually-hidden filters__input filters__input-checkbox" id="syrop" name="filling" type="checkbox">
+							<label for="syrop">сиропы</label>
+							<input class="visually-hidden filters__input filters__input-checkbox" id="jam" name="filling" type="checkbox">
+							<label for="jam">джемы</label>
+						</div>
+					</fildset>
+					<button class="filters__button button">Применить</button>
 				</form>
 			</section>
 			<section class="goods">
+				<h2 class="visually-hidden">Каталог товаров</h2>
 				<ul class="googs__list">
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">
 								<span class="goods__price">310&#8381;/кг</span>
@@ -119,7 +121,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 								<span class="goods__price">380&#8381;/кг</span>
@@ -129,7 +131,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 								<span class="goods__price">355&#8381;/кг</span>
@@ -139,7 +141,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 								<span class="goods__price">415&#8381;/кг</span>
@@ -149,7 +151,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
 								<span class="goods__price">325&#8381;/кг</span>
@@ -159,7 +161,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
 								<span class="goods__price">410&#8381;/кг</span>
@@ -169,7 +171,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
 								<span class="goods__price">375&#8381;/кг</span>
@@ -179,7 +181,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
 								<span class="goods__price">320&#8381;/кг</span>
@@ -189,7 +191,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
 								<span class="goods__price">440&#8381;/кг</span>
@@ -199,7 +201,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-10.jpg" width="267" height="267" alt="Сливочноe с ментоловым сиропом">
 								<span class="goods__price">435&#8381;/кг</span>
@@ -209,7 +211,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
 								<span class="goods__price">355&#8381;/кг</span>
@@ -219,7 +221,7 @@
 					</li>
 					<li class="goods__item">
 						<div class="goods__hover">
-							<a href="goods__button button">Быстрый просмотр</a>
+							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
 								<img src="img/item-12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
 								<span class="goods__price">420&#8381;/кг</span>
@@ -270,6 +272,7 @@
 			</ul>
 		</footer>
 		<section class="fullcart">
+			<h3 class="visually-hidden">Корзина с товарами</h3>
 			<table class="fullcart__table">
 				<tr>
 					<td class="fullcart__img"></td>
