@@ -3,6 +3,9 @@
 	<head>
 		<meta charset="utf-8">
 		<title>HTML Academy: Глейси</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.min.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header>
@@ -15,13 +18,13 @@
 					<li class="nav__catalog">
 						<a href="catalog.html">Каталог</a>
 						<ul class="nav__catalog-popup">
-							<li><a href="#">Новинки</a></li>
+							<li><a class="nav__new" href="#">Новинки</a></li>
 							<li><a href="#">Сливочное</a></li>
 							<li><a href="#">Щербеты</a></li>
 							<li><a href="#">Фруктовый лед</a></li>
 							<li><a href="#">Мелорин</a></li>
 						</ul>
-					</li>
+					</li> 
 					<li class="nav__delivery">
 						<a href="#">Доставка</a>
 					</li>
@@ -89,24 +92,44 @@
 			</div>
 			<ul class="hit">
 				<li class="hit__item">
-					<img src="img/hit1.jpg" alt="hit1" class="hit__image">
-					<span class="hit__price">310Р/кг</span>
-					<p class="hit__description">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+					<div class="hit__hover">
+						<a href="#" class="hit__button button">Быстрый просмотр</a>
+						<div class="hit__content">
+							<img src="img/item-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">
+							<span class="hit__price">310&#8381;/кг</span>
+							<p class="hit__description">Сливочное с апельсиновым джемом и цитросувой стружкой</p>
+						</div>
+					</div>
 				</li>
 				<li class="hit__item">
-					<img src="img/hit2.jpg" alt="hit2" class="hit__image">
-					<span class="hit__price">380Р/кг</span>
-					<p class="hit__description">Сливочно-кофейное с кусочками шоколада</p>
+					<div class="hit__hover">
+						<a href="#" class="hit_button button">Быстрый просмотр</a>
+						<div class="hit__content">
+							<img src="img/item-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+							<span class="hit__price">380&#8381;/кг</span>
+							<p class="hit__description">Сливочно-кофейное с кусочками шоколада</p>
+						</div>
+					</div>
 				</li>
 				<li class="hit__item">
-					<img src="img/hit3.jpg" alt="hit3" class="hit__image">
-					<span class="hit__price">355Р/кг</span>
-					<p class="hit__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+					<div class="hit__hover">
+						<a href="#" class="hit__button button">Быстрый просмотр</a>
+						<div class="hit__content">
+							<img src="img/item-3.jpg" width="267" height="267" alt="Сливочно-клубничное с приыпкой из белого шоколада">
+							<span class="hit__price">355&#8381;/кг</span>
+							<p class="hit__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
+						</div>
+					</div>
 				</li>
 				<li class="hit__item">
-					<img src="img/hit4.jpg" alt="hit4" class="hit__image">
-					<span class="hit__price">415Р/кг</span>
-					<p class="hit__description">Сливочное крем-брюле с карамельной подливкой</p>
+					<div class="hit__hover">
+						<a href="#" class="hit__button button">Быстрый просмотр</a>
+						<div class="v__content">
+							<img src="img/item-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+							<span class="hit__price">415&#8381;/кг</span>
+							<p class="hit__description">Сливочное крем-брюле с карамельной подливкой</p>
+						</div>
+					</div>
 				</li>
 			</ul>
 			<article class="seo">
@@ -198,7 +221,7 @@
 			</form>
 		</section>
 		<section class="search__modal">
-			<h3 class="visually-hidden">Ворма поиска</h3>
+			<h3 class="visually-hidden">Форма поиска</h3>
 			<form action="https://echo.htmlacademy.ru" class="search__form">
 				<input type="text" class="search__input" placeholder="Что ищем?">
 			</form>
