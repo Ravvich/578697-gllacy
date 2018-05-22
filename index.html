@@ -8,9 +8,16 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+			<input class="visually-hidden" type="radio" id="btn-1" name="toggle" checked>
+			<input class="visually-hidden" type="radio" id="btn-2" name="toggle"> 
+			<input class="visually-hidden" type="radio" id="btn-3" name="toggle"> 
+
+		<div class="site__wrapper">
+
 		<header>
 			<h1 class="visually-hidden">Навигация по главной странице магазина Gllacy.</h1>
 			<nav class="nav">
+				<div class="nav__main">
 				<a class="nav__logo" href="#">
 					<img src="img/logo.png" alt="Gllacy логотип" width="154" height="64">
 				</a>
@@ -18,15 +25,15 @@
 					<li class="nav__catalog">
 						<a href="catalog.html">Каталог</a>
 						<ul class="nav__catalog-popup">
-							<li><a class="nav__new" href="#">Новинки</a></li>
-							<li><a href="#">Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фруктовый лед</a></li>
-							<li><a href="#">Мелорин</a></li>
+							<li class="nav__item"><a class="nav__new" href="#">Новинки</a></li>
+							<li class="nav__item"><a href="#">Сливочное</a></li>
+							<li class="nav__item"><a href="#">Щербеты</a></li>
+							<li class="nav__item"><a href="#">Фруктовый лед</a></li>
+							<li class="nav__item"><a href="#">Мелорин</a></li>
 						</ul>
 					</li> 
 					<li class="nav__delivery">
-						<a href="#">Доставка</a>
+						<a href="#">Доставка и оплата</a>
 					</li>
 					<li class="nav__about">
 						<a href="#">О компании</a>
@@ -43,39 +50,50 @@
 						<a href="#">Корзина</a>
 					</li>
 				</ul>
-				<p class="nav__contacts">С 10 до 20, ежедневно</p>
-				<p class="nav__phone">8 812 450-24-24</p>
+				</div>
+				<div class="nav__info">
+					<p class="nav__contacts">С 10 до 20, ежедневно</p>
+					<p class="nav__phone">8 812 450-24-24</p>
+				</div>
 			</nav>
 		</header>
 		<main class="main__wrap">
 			<section class="popular">
+				<h2 class="visually-hidden">Популярные товары</h2>
 				<ul class="popular__list">
-					<li class="popular__item">
-						<h2 class="popular__title">
-							Крем-брюе и пломбир с малиновым джемом
-						</h2>
+					<li class="popular__item" id="slide-1">
+						<h3 class="popular__title">
+							Крем-брюле и пломбир с малиновым джемом
+						</h3>
 						<a href="#" class="button popular__button">
-							Дайте оба!
+							Давайте оба!
 						</a>
 					</li>
-					<li class="popular__item">
-						<h2 class="popular__title">
+					<li class="popular__item" id="slide-2">
+						<h3 class="popular__title">
 							Шоколадный пломбир и лимонный сорбет
-						</h2>
+						</h3>
 						<a href="#" class="button popular__button">
-							Дайте оба!
+							Давайте оба!
 						</a>
 					</li>
-					<li class="popular__item">
-						<h2 class="popular__title">
+					<li class="popular__item" id="slide-3">
+						<h3 class="popular__title">
 							Пломбир с помадкой и клубничный щербет
-						</h2>
+						</h3>
 						<a href="#" class="button popular__button">
-							Дайте оба!
+							Давайте оба!
 						</a>
 					</li>
 				</ul>
+				<div class="popular__controls">
+					<label for="btn-1">Первый слайд</label>
+					<label for="btn-2">Второй слайд</label>
+					<label for="btn-3">Третий слайд</label>
+				</div>
 			</section>
+
+		
 			<div class="banner__wrap">
 				<section class="banner">
 					<h3 class="banner__title">Малинка даром!</h3>
@@ -184,7 +202,7 @@
 				<a href="#" class="footer__vk"><span class="visually-hidden">Вконтакте</span></a>
 			</div>
 			<ul class="footer__links">
-				<li class="footer__text">
+				<li class="footer__textbold">
 					<a href="#" class="footer__link">Для поставщиков</a>
 				</li>
 				<li class="footer__text"><li class="footer__text">
@@ -204,6 +222,7 @@
 				<li class="footer__text">Сделано в HTML Academy © 2017</li>
 			</ul>
 		</footer>
+		</div>
 		<section class="login__modal">
 			<h3 class="visually-hidden">Форма входа</h3>
 			<form class="login__form" action="https://echo.htmlacademy.ru" method="post">
@@ -244,5 +263,6 @@
 			</form>
 			<button class="popup__close" type="button"></button>
 		</section>
+		
 	</body>
 </html>
