@@ -490,7 +490,34 @@ a.nav__new {
 
 /*--------banner-------*/
 
+.banner__wrap {
+	display: flex;
+	justify-content: space-between;
+	width: 1200px;
+	margin: 0 auto;
+	margin-top: 40px;
+	padding-left: 27px;
+	padding-right: 27px;
+}
+
+.banner {
+	width: 560px;
+	
+	padding: 20px;
+	border-radius: 15px;
+	background-image: url(../img/malina.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.banner:last-child {
+	background-image: url(../img/shock.png);
+}
+
 .banner__title {
+	margin: 0;
+	margin-bottom: 13px;
+	padding: 0;
 	font-family: "Roboto-Bold", Arial, sans-serif;
 	font-size: 32px;
 	line-height: 41px;
@@ -499,6 +526,23 @@ a.nav__new {
 }
 
 .banner__text {
+	margin: 0;
+	margin-bottom: 40px;
+	padding: 0;
+	font-family: "Roboto-Bold", Arial, sans-serif;
+	font-size: 17px;
+	line-height: 22px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.banner__button {
+	display: block;
+	width: 163px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	padding: 10px 15px;
+  	text-align: center;
 	font-family: "Roboto-Bold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 22px;
@@ -506,27 +550,85 @@ a.nav__new {
 	color: #ffffff;
 }
 
-.banner__button {
-	font-family: "Roboto-Bold", Arial, sans-serif;
-	font-size: 18px;
-	line-height: 24px;
-	font-weight: 700;
-	color: #ffffff;
+.banner__shock a {
+	width: 194px;
 }
 
 
 
 /*-------hit-------*/
 
+.hit {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 20px;
+	padding: 0;
+	width: 1200px;
+	list-style: none;
+}
+
+.hit__item {
+	width: 266px;
+	min-height: 406px;
+}
+
+.hit__button {
+	display: none;
+	position: absolute;
+	top: 340px;
+	left: 45px;
+	padding: 10px 15px;
+}
+
+.hit__content img {
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.hit__content {
+	position: relative;
+}
+
+.hit__content::before {
+	content: "";
+	position: absolute;
+	width: 61px;
+	height: 61px;
+	background-image: url(../img/hit.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	z-index: 20;
+}
+
+.hit__hover {
+	position: relative;
+	width: 293px;
+	min-height: 406px;
+	padding-top: 7px;
+	padding-left: 13px;
+	padding-right: 13px;
+	background-color: transparent;
+	border-radius: 5px; 
+}
+
+.hit__hover:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+	box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.2);
+}
+
 .hit__price {
-	font-family: "Roboto-Bold", Arial, sans-serif;
+	position: absolute;
+	top: 210px;
+	font-family: "Roboto", Arial, sans-serif;
 	font-size: 45px;
 	line-height: 45px;
-	font-weight: 700;
+	font-weight: 500;
 	color: #ffffff;
 }
 
 .hit__description {
+	text-align: center;
 	font-family: "Roboto-Medium", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 22px;
