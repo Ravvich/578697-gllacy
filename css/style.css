@@ -225,7 +225,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	width: 17px;
 	height: 17px;
-	background-image: url(../img/search.png);
+	background-image: url(../img/search.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -250,7 +250,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	width: 21px;
 	height: 19px;
-	background-image: url(../img/enter.png);
+	background-image: url(../img/enter.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -274,7 +274,7 @@ input[type="radio"].visually-hidden {
 	content: "";
 	width: 21px;
 	height: 20px;
-	background-image: url(../img/cart.png);
+	background-image: url(../img/cart.svg);
 	background-repeat: no-repeat;
 	background-position: 0 0;
 }
@@ -825,13 +825,34 @@ a.nav__new {
 
 /*------map------*/
 
+.map {
+	position: relative;
+	width: 1250px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+.map__adress {
+	position: absolute;
+	top: 60px;
+	left: 900px;
+	width: 302px;
+	padding: 20px;
+	padding-top: 28px;
+	border-radius: 15px;
+	background-color: #ffffff; 
+}
+
 .map__info {
+	margin: 0;
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 22px;
 	color: #323232;
 }
 
 .map__street {
+	margin: 0;
+	margin-bottom: 10px;
 	font-family: "Roboto-Bold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
@@ -839,6 +860,8 @@ a.nav__new {
 }
 
 .map__phone {
+	margin: 0;
+	margin-top: 10px;
 	font-family: "Roboto-Bold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 22px;
@@ -846,11 +869,33 @@ a.nav__new {
 }
 
 .map__popup {
+	margin-top: 25px;
+	padding: 10px 25px;
 	font-family: "Roboto-Bold", Arial, sans-serif;
 	font-size: 18px;
 	line-height: 24px;
 	font-weight: 700;
 	color: #fefefe;
+}
+
+.map__pin {
+	position: absolute;
+	top: 140px;
+	left: 290px;
+	width: 80px;
+	height: 140px;
+	content: "";
+	background-image: url(../img/pin.svg);
+}
+
+.map__pin::after {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	content: "";
+	width: 182px;
+	height: 110px;
+	background-image: url(../img/pin-shadow.png);
 }
 
 
