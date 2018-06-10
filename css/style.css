@@ -901,6 +901,99 @@ a.nav__new {
 
 /*=========footer=========*/
 
+.footer {
+	display: flex;
+	justify-content: space-between;
+	width: 1150px;
+	margin: 0 auto;
+	padding-bottom: 22px;
+}
+
+.footer__social a {
+	position: relative;
+	display: inline-block;
+	margin-top: 34px;
+	margin-right: 10px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	border: 3px solid rgba(255, 255, 255, 0.5);
+}
+
+.footer__twitter::before {
+	content: "";
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/twitter.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+
+.footer__instagram::before {
+	content: "";
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/inst.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+
+.footer__facebook::before {
+	content: "";
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/fb.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+
+.footer__vk::before {
+	content: "";
+	position: absolute;
+	width: 32px;
+	height: 32px;
+	background-image: url(../img/vk.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+
+.footer__links {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 305px;
+	margin: 0;
+	margin-top: 30px;
+	padding: 0;
+	list-style: none;
+}
+
+.footer__left,
+.footer__right {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+.footer__right {
+	margin-top: 2px;
+}
+
+.footer__textbold::before {
+	content: "";
+	position: absolute;
+	left: -20px;
+	top: 5px;
+	width: 15px;
+	height: 13px;
+	background-image: url(../img/cuore.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+}
+
 .footer__textbold a {
 	font-family: "Roboto-Bold", Arial, sans-serif;
 	font-size: 13px;
@@ -924,6 +1017,27 @@ a.nav__new {
 	color: #fefefe;
 }
 
+.footer__copyright {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	margin: 0;
+	margin-top: 24px;
+	padding: 0;
+	list-style: none;
+}
+
+.footer__logo {
+	display: block;
+	width: 120px;
+	height: 39px;
+	background-image: url(../img/logo-html.svg);
+	background-repeat: no-repeat;
+	background-position: 0 0; 
+	cursor: pointer;
+
+
+}
 
 
 
