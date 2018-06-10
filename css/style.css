@@ -1035,10 +1035,95 @@ a.nav__new {
 	background-repeat: no-repeat;
 	background-position: 0 0; 
 	cursor: pointer;
-
-
 }
 
+
+/*=========search__modal==========*/
+
+.search__modal {
+	display: none;
+	position: absolute;
+	top: 65px;
+	left: 715px;
+	width: 344px;
+	height: 87px;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	line-height: 40px;
+	box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.6);
+}
+
+.search__input {
+	width: 314px;
+	height: 47px;
+	border: 1px solid #d3d3d3;
+	border-radius: 5px;
+	margin-left: 15px;
+	margin-top: 20px;
+	padding: 16px;
+	color: #999999;
+}
+
+/*=========login__modal========*/
+
+.login__modal {
+	display: none;
+	position: absolute;
+	top: 65px;
+	left: 880px;
+	width: 280px;
+	height: 217px;
+	padding: 17px;
+	background-color: #f8f7f4;
+	border-radius: 5px;
+	line-height: 40px;
+	box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.6);
+}
+
+.login__user,
+.login__password {
+	width: 244px;
+	height: 47px;
+	border: 1px solid #d3d3d3;
+	border-radius: 5px;
+	padding: 16px;
+	color: #999999;
+}
+
+.login__form p {
+	margin-top: 0;
+	margin-bottom: 17px;
+}
+
+.login__button {
+	padding: 14px 27px;
+	font-family: "Roboto-Bold", Arial, sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #ffffff;
+}
+
+.login__membership {
+	display: flex;
+	flex-direction: column;
+	width: 130px;
+	margin: 0;
+}
+
+.login__enter {
+	display: flex;
+	justify-content: space-between;
+}
+
+.login__modal a {
+	font-family: "Roboto-Regular", Arial, sans-serif;
+	font-size: 13px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #323232;
+	text-decoration: underline;
+}
 
 
 
