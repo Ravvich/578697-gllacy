@@ -8,32 +8,34 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<div class="catalog__container">
 		<header>
 			<h1 class="visually-hidden">Навигация по главной странице магазина Gllacy.</h1>
 			<nav class="nav">
-				<a class="nav__logo" href="index.html">
-					<img src="img/logo.png" alt="Gllacy логотип" width="154" height="64">
-				</a>
+				<div class="nav__main">
+					<a class="nav__logo" href="index.html">
+						<img src="img/logo.png" alt="Gllacy логотип" width="154" height="64">
+					</a>
 				<ul class="nav__syte">
-					<li class="nav__catalog">
-						<a href="catalog.html">Каталог</a>
+					<li class="nav__active">
+						<a href="#">Каталог</a>
 						<ul class="nav__catalog-popup">
-							<li><a href="#">Новинки</a></li>
-							<li><a href="#">Сливочное</a></li>
-							<li><a href="#">Щербеты</a></li>
-							<li><a href="#">Фруктовый лед</a></li>
-							<li><a href="#">Мелорин</a></li>
+							<li class="nav__item"><a class="nav__new" href="#">Новинки</a></li>
+							<li class="nav__item"><a href="#">Сливочное</a></li>
+							<li class="nav__item"><a href="#">Щербеты</a></li>
+							<li class="nav__item"><a href="#">Фруктовый лед</a></li>
+							<li class="nav__item"><a href="#">Мелорин</a></li>
 						</ul>
-					</li>
+					</li> 
 					<li class="nav__delivery">
-						<a href="#">Доставка</a>
+						<a href="#">Доставка и оплата</a>
 					</li>
 					<li class="nav__about">
 						<a href="#">О компании</a>
 					</li>
 				</ul>
 				<ul class="nav__user">
-					<li class="nav__searsh">
+					<li class="nav__search">
 						<a href="#"></a>
 					</li>
 					<li class="nav__login">
@@ -43,16 +45,19 @@
 						<a href="#">Корзина</a>
 					</li>
 				</ul>
-				<p class="nav__contacts">С 10 до 20, ежедневно</p>
-				<p class="nav__phone">8 812 450-24-24</p>
+				</div>
+				<div class="nav__info">
+					<p class="nav__contacts">С 10 до 20, ежедневно</p>
+					<p class="nav__phone">8 812 450-24-24</p>
+				</div>
+				</nav>
+		</header>
+		<main class="catalog__wrap">
 				<ul class="nav__breadcrumps">
 					<li class="nav__breadcrumps-item"><a href="index.html">Главная</a></li>
 					<li class="nav__breadcrumps-item"><a href="catalog.html">Каталог</a></li>
 					<li class="nav__breadcrumps-item"><a href="#">Сливочное</a></li>
 				</ul>
-			</nav>
-		</header>
-		<main class="main__wrap">
 			<h1 class="main__title">Сливочное мороженое</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
@@ -293,6 +298,7 @@
 			<span class="fullcart__total">Итого: 750 руб.</span>
 			<button class="fullcart__button button">Оформить заказ</button>
 		</section>
+	</div>
 	</body>
 </html>
 

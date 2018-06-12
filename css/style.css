@@ -90,6 +90,19 @@ input[type="radio"].visually-hidden {
 	display: block;
 }
 
+.nav__active {
+	position: relative;
+	margin-left: 10px;
+	margin-top: -5px;
+	padding: 5px;
+	padding-left: 13px;
+	width: 87px;
+	height: 32px;
+	border-radius: 30px;
+	background-color: #d07058;
+	color: #000000;
+}
+
 .nav__catalog-popup {
 	position: absolute;
 	top: 32px;
@@ -1212,6 +1225,51 @@ a.nav__new {
   transform: rotate(-45deg);
 }
 
+
+/*==========catalog__container========*/
+
+.catalog__container {
+	margin: 0 auto;
+	background-color: #849d8f;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, transparent 20%, transparent 100% );
+	background-repeat: no-repeat;
+	background-position: top;
+}
+
+.catalog__wrap {
+	width: 1150px;
+	margin: 0 auto;
+	margin-top: -45px;
+}
+
+/*=======nav__breadcrumps------*/
+
+.nav__breadcrumps {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav__breadcrumps-item a {
+	margin-right: 25px;
+	font-family: "Roboto-Regular", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #ffffff;
+}
+
+/*======main__title======*/
+
+.main__title {
+	margin: 0;
+	font-family: "Roboto-Bold", Arial, sans-serif;
+	font-size: 35px;
+	line-height: 41px;
+	font-weight: 700;
+	color: #ffffff;
+}
 
 
 
