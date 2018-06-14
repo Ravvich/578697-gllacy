@@ -61,7 +61,8 @@
 			<h1 class="main__title">Сливочное мороженое</h1>
 			<section class="filters">
 				<h2 class="visually-hidden">Фильтр товаров</h2>
-				<form action="https://echo.htmlacademy.ru" method="get">
+				<form class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+					<div class="filters__row1">
 					<fildset class="filters__sort">
 						<legend>Сортировка:</legend>
 						<div class="filters__select">
@@ -94,8 +95,10 @@
 							<label for="<30">до 30%</label>
 							<input class="visually-hidden filters__input filters__input-radio" id="30" name="fat" type="radio">
 							<label for="30">выше 30%</label>
-							</div>
+						</div>
 					</fildset>
+					</div>
+					<div class="filters__row2">
 					<fildset class="filters__filling">
 						<legend>Наполнители:</legend>
 						<div class="filters__fillingwrap">
@@ -111,17 +114,18 @@
 							<label for="jam">джемы</label>
 						</div>
 					</fildset>
-					<button class="filters__button button">Применить</button>
+					<button class="filters__button">Применить</button>
+					</div>
 				</form>
 			</section>
 			<section class="goods">
 				<h2 class="visually-hidden">Каталог товаров</h2>
-				<ul class="googs__list">
+				<ul class="goods__list">
 					<li class="goods__item">
 						<div class="goods__hover">
 							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
-								<img src="img/item-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">
+								<img src="img/hit-1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитросувой стружкой">
 								<span class="goods__price">310&#8381;/кг</span>
 								<p class="goods__description">Сливочное с апельсиновым джемом и цитросувой стружкой</p>
 							</div>
@@ -131,7 +135,7 @@
 						<div class="goods__hover">
 							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
-								<img src="img/item-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+								<img src="img/hit-2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
 								<span class="goods__price">380&#8381;/кг</span>
 								<p class="goods__description">Сливочно-кофейное с кусочками шоколада</p>
 							</div>
@@ -141,7 +145,7 @@
 						<div class="goods__hover">
 							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
-								<img src="img/item-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+								<img src="img/hit-3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 								<span class="goods__price">355&#8381;/кг</span>
 								<p class="goods__description">Сливочно-клубничное с присыпкой из белого шоколада</p>
 							</div>
@@ -151,7 +155,7 @@
 						<div class="goods__hover">
 							<a href="#" class="goods__button button">Быстрый просмотр</a>
 							<div class="goods__content">
-								<img src="img/item-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+								<img src="img/hit-4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 								<span class="goods__price">415&#8381;/кг</span>
 								<p class="goods__description">Сливочное крем-брюле с карамельной подливкой</p>
 							</div>
@@ -242,11 +246,11 @@
 			<div class="goods__paginator">
 				<div class="goods__paginator-prew"><a href="#"></a></div>
 				<ul class="goods__numbers">
-					<li><a class="goods__numbers1 active" href="#">1</a></li>
-					<li><a class="goods__numbers2" href="#">2</a></li>
-					<li><a class="goods__numbers3" href="#">3</a></li>
-					<li><a class="goods__numbers4" href="#">4</a></li>
-					<li><a class="goods__numbers5" href="#">5</a></li>
+					<li><a class="goods__numbers active" href="#">1</a></li>
+					<li><a class="goods__numbers" href="#">2</a></li>
+					<li><a class="goods__numbers" href="#">3</a></li>
+					<li><a class="goods__numbers" href="#">4</a></li>
+					<li><a class="goods__numbers" href="#">5</a></li>
 				</ul>
 				<div class="goods__paginator-next"><a href="#"></a></div>
 			</div>
@@ -259,26 +263,32 @@
 				<a href="#" class="footer__vk"><span class="visually-hidden">Вконтакте</span></a>
 			</div>
 			<ul class="footer__links">
-				<li class="footer__text">
+				<div class="footer__left">
+				<li class="footer__textbold">
 					<a href="#" class="footer__link">Для поставщиков</a>
 				</li>
-				<li class="footer__text"><li class="footer__text">
+				<li class="footer__text">
 					<a href="#" class="footer__link">О производстве</a>
 				</li>
+				</div>
+				<div class="footer__right">
 				<li class="footer__text">
 					<a href="#" class="footer__link">Наши документы</a>
 				</li>
 				<li class="footer__text">
 					<a href="#" class="footer__link">Экологические стандарты</a>
 				</li>
+				</div>
 			</ul>
 			<ul class="footer__copyright">
 				<li class="footer__HTML">
-					<a href="www.htmlacademy.ru" class="visually-hidden">HTML академия</a>
+					<a href="https://htmlacademy.ru/intensive/htmlcss" class="footer__logo">
+						<span class="visually-hidden">HTML академия</span>
+					</a>
 				</li>
 				<li class="footer__text">Сделано в HTML Academy © 2017</li>
 			</ul>
-		</footer>
+			</footer>
 		<section class="fullcart">
 			<h3 class="visually-hidden">Корзина с товарами</h3>
 			<table class="fullcart__table">
